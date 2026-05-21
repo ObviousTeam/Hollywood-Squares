@@ -80,6 +80,8 @@ def reset_game():
 
 
 def start_challenge(x, y):
+
+    print(st.session_state.secret_square)
     if st.session_state.winner or st.session_state.board[x][y] or st.session_state.pending:
         return
 
