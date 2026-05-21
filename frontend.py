@@ -113,7 +113,7 @@ def resolve_challenge(answer):
             st.session_state.O_points += points
         st.session_state.feedback = f"Correct! {current} takes the square. +{points} points"
     else:
-        st.session_state.feedback = f"Wrong. {opponent} gets the square."
+        st.session_state.feedback = f"Wrong."
 
     st.session_state.moves += 1
     st.session_state.bonus = ""
